@@ -48,7 +48,6 @@ public class Ex05 {
 			System.out.println("Valor Total: " + (preco = 13 * quantidade));
 			break;
 			
-			
 
 		}
 	}
