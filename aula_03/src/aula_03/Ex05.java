@@ -6,26 +6,22 @@ public class Ex05 {
 
 	public static void main(String[] args) {
 
-		Scanner leia = new Scanner(System.in);
-
-		int numero = 0, positivo = 0;
-
+Scanner entrada = new Scanner(System.in);
+		
+		int numero, soma = 0;
+		
 		do {
-// lup
 			System.out.println("Digite um número: ");
-			numero = leia.nextInt();
+			numero = entrada.nextByte();
 			
-			if (numero > 0)
-			positivo += numero;
-
+			if (numero >= 0) {
+				soma += numero;
+			}
+		}while (numero != 0);
 		
-			
-
-		} while (numero != 0);
-		//sai do lup
+		System.out.println("A soma dos números positivos é: " + soma);
 		
-		System.out.println("soma dos numeros positivos: " + positivo);
-		
+		entrada.close();
 
 	}
 

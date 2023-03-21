@@ -1,10 +1,31 @@
 package atividade;
 
+import java.util.Scanner;
+
 public class Ex02 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner entrada = new Scanner(System.in);
+		int numero;
+		
+		System.out.println("Digite um número: ");
+		numero = entrada.nextInt();
+		
+		if ((numero % 2 == 0) && (numero > 0)) {
+			System.out.println("O número " + numero + " é par e positivo.");
+		}
+		else if ((numero % 2 == 0) && (numero < 0)) {
+			System.out.println("O número " + numero + " é par e negativo.");
+		}
+		else if ((numero % 2 != 0) && (numero > 0)) {
+			System.out.println("O número " + numero + " é ímpar e negativo.");
+		}
+		else if ((numero % 2 != 0) && (numero < 0)) {
+			System.out.println("O número " + numero + " é ímpar e negativo.");
+		}
+		
+		entrada.close();
+		
 	}
 
 }
