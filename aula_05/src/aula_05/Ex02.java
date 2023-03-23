@@ -1,15 +1,14 @@
 package aula_05;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Ex02 {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 
-		Queue<String> pilha = new LinkedList<String>();
+		Stack<String>pilha = new Stack<String>();
 
 		byte opcao = 0;
 
@@ -30,7 +29,6 @@ public class Ex02 {
 				System.out.println("Digite um nome: ");
 				entrada.nextLine();
 				livro = entrada.nextLine();
-
 				pilha.add(livro);
 
 				break;
@@ -47,7 +45,7 @@ public class Ex02 {
 
 			case 3:
 				if (pilha.isEmpty()) {
-					System.out.println("fila vazia!");
+					System.out.println("pilha vazia!");
 				} else {
 					pilha.remove(livro);
 					System.out.println("Remover livro: ");

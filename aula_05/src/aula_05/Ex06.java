@@ -10,8 +10,7 @@ public class Ex06 {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		Set<Integer> setInteiros = new HashSet<Integer>();
-		
-		//System.out.println("Digite números !\n");
+	
 		
 		for (int i = 0; i < 10; i++) {
 			System.out.println("Digite um número: ");
