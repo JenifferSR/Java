@@ -13,6 +13,7 @@ public class Ex01 {
 		System.out.println("Digite o número que deseja encontrar: ");
 		numero = entrada.nextInt();
 		
+		
 		for (int i = 0; i < 10; i++) {
 			if (vetorInteiros[i] == numero) {
 				System.out.println("O número " + numero + " está na posição: " + i);
