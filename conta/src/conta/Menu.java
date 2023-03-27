@@ -3,6 +3,8 @@ package conta;
 import java.util.Scanner;
 
 import conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
 import conta.util.Cores;
 
 public class Menu {
@@ -15,26 +17,25 @@ public class Menu {
 		String titular;
 		float saldo, limite, valor;
 
+		//CONTA
 		Conta c1 = new Conta(1, 123, 1, "Jeniffer Souza", 10000.0f);
-
-		c1.visualizar();
-
-		// get mostra
-		System.out.println("Saldo" + c1.getSaldo());
-
-		// set altera
-		c1.setTitular("Jeniffer Souza Ribeiro");
-
-		c1.visualizar();
-
-		//c1.sacar(20000.0f);
-
-		//c1.visualizar();
-
-		c1.depositar(1000.0f);
-
-		c1.visualizar();
+//CONTA CORRENTE
+		ContaCorrente cc1 = new ContaCorrente(2, 123, 1, "Fabio Silva", 10000.0f, 10000.0f);
+		//CONTAPUPANCA
+		ContaPoupanca cp = new ContaPoupanca(3, 123, 2, "Rafael Lopes", 10000.0f, 15);
 		
+		Conta c2 = new Conta();
+		
+		
+		c2.visualizar();
+
+
+		c1.visualizar();
+		cc1.visualizar();
+		cc1.sacar(20000.0f);
+		cc1.visualizar();
+		cp.visualizar();
+
 		while (true) {
 
 			System.out.println(Cores.TEXT_CYAN_BOLD + "-------------------------------------------------------------");
@@ -61,9 +62,10 @@ public class Menu {
 
 			opcao = leia.nextInt();
 
+
 			if (opcao == 9) {
 
-				System.out.println(Cores.TEXT_CYAN_BOLD + "\n              BANCO JAVA - VOCÊ NO CAMINHA CERTO !!");
+				System.out.println(Cores.TEXT_CYAN_BOLD + "\n              BANCO JAVA - VOCÊ NO CAMINHO CERTO !!");
 				sobre();
 				leia.close();
 				System.exit(0);

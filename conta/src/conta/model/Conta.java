@@ -21,6 +21,7 @@ public class Conta {
 	}
 
 //metodo git set
+	public Conta () { }
 
 	public int getNumero() {
 		return numero;
@@ -70,7 +71,7 @@ public class Conta {
 			return false;
 		}
 		
-		this.setSaldo(this.getAgencia() - valor);
+		this.setSaldo(this.getSaldo() - valor);
 		return true;
 	}
 

@@ -3,15 +3,13 @@ package ex02;
 public class Funcionario {
 	private int ctps;
 	private int rg;
-	private int cargo;
 	private String nome;
 	private float salario;
 
-	public Funcionario(int ctps, int rg, int cargo, String nome, float salario) {
+	public Funcionario(int ctps, int rg, String nome, float salario) {
 		super();
 		this.ctps = ctps;
 		this.rg = rg;
-		this.cargo = cargo;
 		this.nome = nome;
 		this.salario = salario;
 	}
@@ -32,13 +30,6 @@ public class Funcionario {
 		this.rg = rg;
 	}
 
-	public int getCargo() {
-		return cargo;
-	}
-
-	public void setCargo(int cargo) {
-		this.cargo = cargo;
-	}
 
 	public String getNome() {
 		return nome;
@@ -58,19 +49,13 @@ public class Funcionario {
 
 	public void visualizar() {
 
-		String tipo = "";
-
-		switch (this.cargo) {
-		case 1 -> tipo = "Estagiario";
-		case 2 -> tipo = "Pleno";
-		}
+	
 	
 		System.out.println("-------------------------------------------------------------");
 		System.out.println("                      DADOS DO FUNCIONARIO                   ");
 		System.out.println("-------------------------------------------------------------");
 		System.out.println("               Numero da carteira de trabalho: " + this.ctps  );
 		System.out.println("               Numero do RG : " + this.rg                     );
-		System.out.println("               Cargo : " + tipo                               );
 		System.out.println("               Nome do funcionario: " + this.nome             );
 		System.out.println("               Valor do salario: " + this.salario             );
 

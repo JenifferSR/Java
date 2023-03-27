@@ -76,7 +76,6 @@ public class Ingresso {
 		System.out.println("               Nome do Evento : " + this.nome                 );
 		System.out.println("               Nome do Cliente : " + this.nome2               );
 		System.out.println("               Valor do ingresso : " + this.valor             );
-		System.out.println("-------------------------------------------------------------");
 
 	}
 }

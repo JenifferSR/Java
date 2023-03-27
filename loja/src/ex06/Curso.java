@@ -48,14 +48,13 @@ public class Curso {
 	public void visualizar() {
 		
 		System.out.println("-------------------------------------------------------------");
-		System.out.println("                      DADOS FARMACIA                         ");
+		System.out.println("                      DADOS FACULDADE                      ");
 		System.out.println("-------------------------------------------------------------");
 		System.out.println("               Inicio das aulas : " + this.data               );
 		System.out.println("               Curso escolido : " + this.materia              );
 		System.out.println("               Turno : " + this.horario                       );
 		System.out.println("               Sala : " + this.sala                           );
 		System.out.println("               Valor : " + this.valor                         );
-		System.out.println("-------------------------------------------------------------");
 		
 		
 		
