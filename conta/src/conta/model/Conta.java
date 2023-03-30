@@ -1,6 +1,6 @@
 package conta.model;
 
-public class Conta {
+public abstract class Conta  {
 
 	private int numero;
 	private int agencia;
@@ -21,8 +21,6 @@ public class Conta {
 	}
 
 //metodo git set
-	public Conta () { }
-
 	public int getNumero() {
 		return numero;
 	}
@@ -95,7 +93,7 @@ public class Conta {
 		System.out.println("                      DADOS DA CONTA                         ");
 		System.out.println("-------------------------------------------------------------");
 		System.out.println("Numero da conta : " + this.numero);
-		System.out.println("Numrero da agência : " + this.agencia);
+		System.out.println("Numero da agência : " + this.agencia);
 		System.out.println("Tipo da conta : " + tipo);
 		System.out.println("Nome do titular : " + this.titular);
 		System.out.println("Saldo da conta : " + this.saldo);
